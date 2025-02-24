@@ -7,8 +7,7 @@ A simple and efficient Todo application built with React to help you manage your
 - [Features](#features)  
 - [Installation](#installation)  
 - [Usage](#usage)  
-- [Technologies Used](#technologies-used)  
-- [Contributing](#contributing)   
+- [Technologies Used](#technologies-used)   
 
 ## Features  
 
@@ -43,15 +42,15 @@ To get a local copy of this project up and running, follow these simple steps:
 7. Use the filter options to view all, active, or completed tasks.
 
 ## Technologies Used
-is project was built using the following technologies:
+this  project was built using the following technologies:
 
-# Frontend:
+## Frontend:
 
-.. React
-.. CSS
-.. React Hooks (for state management)
+- React
+- CSS
+- React Hooks (for state management)
 
-# Development Tools:
- .. npm (Node Package Manager)
-# Version Control:
-.. Git
+## Development Tools:
+ - npm (Node Package Manager)
+## Version Control:
+- Git
