@@ -1,0 +1,16 @@
+.not-found-container{
+    /* height: 100vh; */
+    text-align: center;
+    padding: 20px;
+}
+
+.not-found-container h1{
+    font-size: 2rem;
+    color: #f00;
+    margin-bottom: 10px;
+}
+
+.not-found-container p{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
