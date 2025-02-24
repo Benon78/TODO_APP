@@ -5,11 +5,9 @@ import heroImage from "../../assets/Images/Home.png";
 function Home() {
   return (
     <div className="home-container">
-      <div
-        className="home-hero-container"
-        aria-roledescription="Image of the hero section show the list of todo items">
-        <img src={heroImage} alt="hero image" />
-      </div>
+      <header className="home-hero-container" role="banner">  
+        <img src={heroImage} alt="Hero showcasing todo items" role="img"/>  
+      </header>
       <h1>Get things done with TODO</h1>
       <div className="home-content-container">
         <p>

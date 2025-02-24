@@ -51,17 +51,17 @@ const Layout = () => {
     return (  
         <div className='layout-container'>  
             <header className='header-container'>  
-                <Link to='/' className='site-logo'>  
+                <Link to='/' className='site-logo' aria-label='link that contain the todo logo which navigate to the home page'>  
                     <img src={logo} alt="Image of todo logo" />  
                 </Link>  
                 <nav className='nav-container'>  
-                    <NavLink to='/' style={({ isActive }) => (isActive ? activeStyles : null)}>  
+                    <NavLink to='/' style={({ isActive }) => (isActive ? activeStyles : null)} aria-label='link to home page'>  
                         HOME  
                     </NavLink>  
-                    <NavLink to='todo' style={({ isActive }) => (isActive ? activeStyles : null)}>  
+                    <NavLink to='todo' style={({ isActive }) => (isActive ? activeStyles : null)} aria-label='link to todos page'>  
                         TODOS  
                     </NavLink>  
-                    <NavLink to='login' className='user-icon-link'>  
+                    <NavLink to='login' className='user-icon-link' aria-label='link to user login page'>  
                         <FaUser className={currentUser ? 'user-icon-active' : 'user-icon-inactive'} />  
                     </NavLink>  
                 </nav>  
