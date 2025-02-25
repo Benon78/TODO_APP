@@ -73,12 +73,6 @@ function TodoItems() {
             value={tittle}  
             onChange={(e) => setTittle(e.target.value)}  
           />  
-          {/* <input  
-            type="text"  
-            placeholder="Description"  
-            value={description}  
-            onChange={(e) => setDescription(e.target.value)}  
-          />   */}
           <textarea
               type="text"  
                placeholder="Description"
@@ -134,12 +128,6 @@ function TodoItems() {
               value={editTittle}  
               onChange={(e) => setEditTittle(e.target.value)}  
             />  
-            {/* <input  
-              type="text"  
-              placeholder="Description"  
-              value={editDescription}  
-              onChange={(e) => setEditDescription(e.target.value)}  
-            />   */}
             < textarea 
               type="text"  
               placeholder="Description"  

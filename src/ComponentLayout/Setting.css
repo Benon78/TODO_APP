@@ -12,8 +12,9 @@
 }
   
   .setting-container h1 {  
-    font-size: 2em; /* Large font size for heading */  
-    margin-bottom: 20px; /* Space below the heading */  
+    text-align: center;
+    font-size: 1.2em; /* Large font size for heading */  
+    margin-bottom: 10px; /* Space below the heading */  
     color: #343a40; /* Dark text color */  
   }  
   
@@ -33,9 +34,31 @@
     background: linear-gradient(45deg, #D8605B, #F4C27F)/* Darker shade on hover */  
   }  
   
-
+  
   .setting-container p {  
     font-size: 1em; /* Regular font size for paragraph */  
     color: #6c757d; /* Secondary text color */  
     margin-top: 15px; /* Space above message */  
+  }
+  
+  .profile-update-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+
+  }
+
+  .profile-update-form input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #D8605B;
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 0.7rem;
   }

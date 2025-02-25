@@ -40,6 +40,41 @@
 .nav-container a:hover{
     color: #f44336;
 }
+.user-icon-link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #f44336;
+    transition: border-color 0.3s;
+
+}
+.user-icon-link:hover{
+    border: 2px solid #000;
+    animation: rotateBorder 1s forwards; /* Trigger the animation on hover */  
+}
+
+@keyframes rotateBorder {  
+    0% {  
+        border-color: #000; /* Initial border color */  
+        /* transform: rotate(0deg);   */
+    }  
+    50% {  
+        border-color: #e74c3c; /* Color change at halfway point */  
+    }  
+    100% {  
+        border-color: #f79036; /* Final border color */  
+        /* transform: rotate(360deg); Rotate fully   */
+    }  
+}  
+
+#avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .user-icon-active{
     color: #f44336;
     cursor: pointer;

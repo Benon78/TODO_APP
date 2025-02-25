@@ -80,6 +80,11 @@
 }
 
 .login-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
   text-align: center;
   margin-top: 20px;
 }
@@ -96,6 +101,32 @@
 .login-footer p a:hover {
   color: #e91e63;
 }
+.google-btn {
+  background: linear-gradient(-45deg, #D8605B, #F4C27F);
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  text-align: center;
+  border-radius: 15px;
+  transition: background 0.3s ease;
+  font-size: 0.95rem;
+  font-weight: 900;
+  font-family: inherit;
+  cursor: pointer;
+}
 
+.google-btn:hover {
+  background: linear-gradient(-45deg, #F4C27F, #D8605B);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.google-btn .google-icon {
+ font-size: 1.2rem;
+}
+/* Responsive design */
 @media screen and (max-width: 600px) {
 }
