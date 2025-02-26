@@ -16,10 +16,10 @@ function CompletedTodos() {
               <h4>{todo.tittle}</h4>
               <p>{todo.description}</p>
               <div className="todo-actions">
-                <button id="complete" onClick={() => undoTodo(todo.id)}>
+              <button id="complete" aria-label={`Undo ${todo.tittle}`} onClick={() => undoTodo(todo.id)}>
                   <FaUndo className="icon" /> Undo
                 </button>
-                <button id="delete" onClick={() => deleteCompletedTodo(todo.id)}>
+                <button id="delete" aria-label={`Delete ${todo.tittle}`} onClick={() => deleteCompletedTodo(todo.id)}>
                   <FaTrashAlt className="icon" /> Delete
                 </button>
               </div>

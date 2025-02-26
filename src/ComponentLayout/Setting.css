@@ -1,0 +1,64 @@
+/* Layout.css */  
+
+.setting-container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: 0 auto;
+    padding: 20px;
+    gap: 10px;
+    width: 100%;
+}
+  
+  .setting-container h1 {  
+    text-align: center;
+    font-size: 1.2em; /* Large font size for heading */  
+    margin-bottom: 10px; /* Space below the heading */  
+    color: #343a40; /* Dark text color */  
+  }  
+  
+  .setting-container .setting-btn {  
+    padding: 10px 20px; /* Padding for button */  
+    font-size: 1em; /* Font size for button text */  
+    color: white; /* Button text color */  
+    background: linear-gradient(-45deg, #D8605B, #F4C27F);/* Primary button color */  
+    border: none; /* No border */  
+    border-radius: 20px; /* Rounded corners for button */  
+    cursor: pointer; /* Pointer cursor on hover */  
+    transition: background-color 0.3s ease; /* Smooth transition effect */  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+  }  
+  
+  .setting-container .setting-btn:hover {  
+    background: linear-gradient(45deg, #D8605B, #F4C27F)/* Darker shade on hover */  
+  }  
+  
+  
+  .setting-container p {  
+    font-size: 1em; /* Regular font size for paragraph */  
+    color: #6c757d; /* Secondary text color */  
+    margin-top: 15px; /* Space above message */  
+  }
+  
+  .profile-update-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+
+  }
+
+  .profile-update-form input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #D8605B;
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 0.7rem;
+  }

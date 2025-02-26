@@ -9,7 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import Layout from "./ComponentLayout/Layout";
-import Setting from "./ComponentLayout/Setting";
+import Setting,{action as settingAction} from "./ComponentLayout/Setting";
 import Login, {
   loader as loginLoader,
   action as loginAction,
@@ -66,6 +66,7 @@ function App() {
           element={<Setting />}
           errorElement={<Error />}
           loader={({ request }) => requiredAuth(request)}
+          action={settingAction}
         />
         <Route
           path="register"

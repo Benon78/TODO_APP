@@ -1,8 +1,8 @@
 import "./TodoLayout.css";  
-import { NavLink, Link, Outlet, useOutletContext } from "react-router-dom";  
+import { NavLink, Link, Outlet} from "react-router-dom";  
 import { FaClipboardList, FaCalendarCheck, FaCog } from "react-icons/fa";  
-import { useState, useEffect } from "react";  
-import { getStoredTodos } from '../../../ComponentLayout/Hooks/utils'
+import { useState} from "react";  
+import { userName }  from '../../../../firebaseConfig'
 
 function TodoLayout() {  
   const activeStyles = {  
@@ -10,31 +10,14 @@ function TodoLayout() {
   };  
 
   // Fetch user data from context
-  const user  = useOutletContext();
-  const userId = user?.userId
-  const email = user?.email
-  const username = user?.username
+
 
   // Fetch todos from local storage
-  const [todos, setTodo] = useState(()=>{
-    const localTodos = getStoredTodos("todos");
-    return localTodos[userId] || []; 
-  }
-  );  
-  const [completedTodos, setCompletedTodos] = useState(()=>{
-    const localCompletedTodos = getStoredTodos("completedTodo");
-    return localCompletedTodos[userId] || [];
-  });  
+  const [todos, setTodo] = useState([]) 
+  
+  const [completedTodos, setCompletedTodos] = useState([])
   // Save todos to local storage  
-  useEffect(() => {  
-    const storedLocalTodos = getStoredTodos("todos");  
-    storedLocalTodos[userId] = todos;
-    localStorage.setItem("todos", JSON.stringify(storedLocalTodos)); 
-
-    const storedLocalCompletedTodos = getStoredTodos("todos");  
-        storedLocalCompletedTodos[userId] = completedTodos;
-    localStorage.setItem("completedTodo", JSON.stringify(storedLocalCompletedTodos));  
-  }, [todos, completedTodos, userId]);  
+ 
 
   // Add todo function  
   const addTodo = (todo) => {  
@@ -78,7 +61,7 @@ function TodoLayout() {
   return (  
     <div className="todo-layout">  
       <div className="sidebar-container">  
-        <h2>Welcome back <span>{ username ? username :"user" }</span></h2>  
+        <h2>Welcome <span>{userName ? userName : 'user'}</span></h2>  
         <div className="sidebar-content">  
           <NavLink  
             to="addToDo"  
@@ -97,10 +80,7 @@ function TodoLayout() {
       </div>  
       <div className="todo-container">  
         <Outlet  
-          context={{  
-            userId,  
-            email,  
-            username,  
+          context={{
             todos,  
             completedTodos,  
             addTodo,  
